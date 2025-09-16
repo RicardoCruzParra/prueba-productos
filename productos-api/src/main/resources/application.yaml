@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:productosdb;DB_CLOSE_DELAY=-1;MODE=LEGACY
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secret: "ZEc1O6mtP5f0RTIgB8bNi9xtEKQnVakIPRWjfrHgbi4="
+  expiration-minutes: 120
+
+server:
+  port: 8080
